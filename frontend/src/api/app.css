@@ -1,0 +1,789 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+    background:#f1f5f9;
+
+    color:#1e293b;
+
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+
+.page{
+
+    margin-left:260px;
+
+    padding:40px;
+
+    min-height:100vh;
+
+}
+
+
+
+/* HEADINGS */
+
+
+h1{
+
+    font-size:34px;
+
+    color:#0f172a;
+
+    margin-bottom:30px;
+
+}
+
+
+
+h2{
+
+    color:#0f172a;
+
+}
+
+
+
+h3{
+
+    color:#475569;
+
+}
+
+
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+
+    background:white;
+
+    padding:35px;
+
+
+    border-radius:22px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.08);
+
+
+    transition:
+    0.35s ease;
+
+
+}
+
+
+
+.card:hover{
+
+
+    transform:
+    translateY(-12px);
+
+
+    box-shadow:
+
+    0 25px 50px rgba(0,0,0,0.15);
+
+
+}
+
+
+
+.card h3{
+
+    color:#64748b;
+
+    font-size:18px;
+
+}
+
+
+
+.card h1{
+
+    color:#2563eb;
+
+    font-size:45px;
+
+}
+
+
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+
+.form-container{
+
+
+    background:white;
+
+
+    padding:30px;
+
+
+    border-radius:22px;
+
+
+    display:flex;
+
+
+    flex-wrap:wrap;
+
+
+    gap:18px;
+
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.08);
+
+
+    transition:0.3s ease;
+
+
+}
+
+
+
+.form-container:hover{
+
+
+    transform:
+    translateY(-5px);
+
+
+}
+
+
+
+/* =========================
+   INPUTS
+========================= */
+
+
+input,
+select{
+
+
+    width:220px;
+
+
+    height:45px;
+
+
+    padding:
+    10px 15px;
+
+
+    border:
+
+    1px solid #cbd5e1;
+
+
+    border-radius:12px;
+
+
+    background:white;
+
+
+    color:#1e293b;
+
+
+    font-size:15px;
+
+
+    transition:0.3s ease;
+
+
+}
+
+
+
+input:hover,
+select:hover{
+
+
+    border-color:#2563eb;
+
+
+}
+
+
+
+input:focus,
+select:focus{
+
+
+    outline:none;
+
+
+    border-color:#2563eb;
+
+
+    box-shadow:
+
+    0 0 0 4px rgba(37,99,235,0.15);
+
+
+    transform:
+    translateY(-2px);
+
+
+}
+
+
+
+input::placeholder{
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+
+button{
+
+
+    border:none;
+
+
+    padding:
+    12px 22px;
+
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+
+    color:white;
+
+
+    font-weight:600;
+
+
+    font-size:15px;
+
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+    );
+
+
+    transition:
+
+    0.3s ease;
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:
+
+    translateY(-5px);
+
+
+    box-shadow:
+
+    0 12px 25px rgba(37,99,235,0.35);
+
+
+}
+
+
+
+button:active{
+
+
+    transform:
+    scale(0.95);
+
+
+}
+
+
+
+/* =========================
+   TABLE
+========================= */
+
+
+table{
+
+
+    width:100%;
+
+
+    margin-top:30px;
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+    border-collapse:collapse;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.08);
+
+
+}
+
+
+
+th{
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+    );
+
+
+    color:white;
+
+
+    padding:18px;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+td{
+
+
+    padding:16px;
+
+
+    text-align:center;
+
+
+    border-bottom:
+
+    1px solid #e2e8f0;
+
+
+    color:#475569;
+
+
+}
+
+
+
+
+tbody tr{
+
+
+    transition:0.3s ease;
+
+
+}
+
+
+
+tbody tr:hover{
+
+
+    background:#eff6ff;
+
+
+    transform:
+    scale(1.01);
+
+
+}
+
+
+
+
+/* =========================
+   TABLE BUTTONS
+========================= */
+
+
+td button{
+
+
+    padding:
+    8px 15px;
+
+
+    margin:5px;
+
+
+}
+
+
+
+td button:first-child{
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #22c55e,
+    #15803d
+    );
+
+
+}
+
+
+
+td button:first-child:hover{
+
+
+    box-shadow:
+
+    0 10px 20px rgba(34,197,94,0.35);
+
+
+}
+
+
+
+td button:last-child{
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #ef4444,
+    #b91c1c
+    );
+
+
+}
+
+
+
+td button:last-child:hover{
+
+
+    box-shadow:
+
+    0 10px 20px rgba(239,68,68,0.35);
+
+
+}
+
+
+
+/* =========================
+   FILTER BOX
+========================= */
+
+
+.filter-box{
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    margin-top:25px;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.08);
+
+
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+.page{
+
+margin-left:0;
+
+padding:20px;
+
+}
+
+
+
+.cards{
+
+
+grid-template-columns:
+1fr;
+
+
+}
+
+
+.form-container{
+
+
+flex-direction:column;
+
+
+}
+
+
+
+input,
+select{
+
+
+width:100%;
+
+
+}
+
+
+}
+
+/* LOGIN PAGE */
+
+/* LOGIN PAGE FIX */
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+
+    position: fixed;
+
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #0f172a
+    );
+
+}
+
+
+.login-card {
+
+    width:380px;
+
+    background:white;
+
+    padding:45px 40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+    text-align:center;
+
+}
+
+
+.login-card h1{
+
+    margin-bottom:10px;
+
+    color:#0f172a;
+
+    font-size:32px;
+
+    font-weight: 700;
+
+}
+
+.login-card p{
+
+    color:#2563eb;
+
+    margin-bottom:30px;
+
+    font-size: 18px;
+
+}
+
+.login-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.login-card input{
+
+    width:100%;
+
+    height:50px;
+
+    border-radius:12px;
+
+    border:1px solid #cbd5e1;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+}
+
+.login-card input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.3);
+
+}
+
+.login-card button{
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-card button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
