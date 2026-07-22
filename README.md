@@ -56,7 +56,7 @@ Database:
 ![Attendance system](./screenshots/attendance_system.png)
 
 ### Attendance History
-![Attendance system](./screenshots/emp_attendance_histroy.png)
+![Attendance system](./screenshots/emp_attendance_history.png)
 ## Database Design
 
 Tables:
