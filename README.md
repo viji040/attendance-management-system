@@ -41,6 +41,20 @@ Database:
 - Absent today
 
 
+## Screenshots
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Employee Management
+![Employees](screenshots/employees.png)
+
+### Attendance Management
+![Attendance](screenshots/attendance.png)
+
 ## Database Design
 
 Tables:
