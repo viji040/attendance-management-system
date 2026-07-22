@@ -43,10 +43,10 @@ Database:
 
 ## Screenshots
 
-### Login Page
+### Admin Login Page
 ![Admin Login](./screenshots/admin_login.png)
 
-### Dashboard
+### Admin Dashboard
 ![Admin Dashboard](./screenshots/admin_dashboard.png)
 
 ### Employee Management
