@@ -28,7 +28,7 @@ Database:
 - View employees
 - Update employee
 - Delete employee
-- Search employees
+
 
 ### Attendance Management
 - Mark attendance
@@ -37,7 +37,6 @@ Database:
 
 ### Dashboard
 - Total employees
-- Active employees
 - Present today
 - Absent today
 
