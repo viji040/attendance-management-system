@@ -44,17 +44,19 @@ Database:
 ## Screenshots
 
 ### Login Page
-![Login](screenshots/login.png)
+![Admin Login](.screenshots/admin login.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Admin Dashboard](.screenshots/admin dashboard.png)
 
 ### Employee Management
-![Employees](screenshots/employees.png)
+![Employees details](.screenshots/employee details.png)
 
 ### Attendance Management
-![Attendance](screenshots/attendance.png)
+![Attendance system](.screenshots/attendance system.png)
 
+### Attendance History
+![Attendance system](.screenshots/emp attendance histroy.png)
 ## Database Design
 
 Tables:
